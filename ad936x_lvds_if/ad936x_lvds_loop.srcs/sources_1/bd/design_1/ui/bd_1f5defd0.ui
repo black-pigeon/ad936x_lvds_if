@@ -1,0 +1,85 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.493947",
+   "Default View_TopLeft":"-200,-53",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 2110 -y 600 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 2110 -y 620 -defaultsOSRD
+preplace port spi_clk -pg 1 -lvl 6 -x 2110 -y 660 -defaultsOSRD
+preplace port spi_mosi -pg 1 -lvl 6 -x 2110 -y 680 -defaultsOSRD
+preplace port spi_miso -pg 1 -lvl 0 -x -40 -y 880 -defaultsOSRD
+preplace port spi_csn -pg 1 -lvl 6 -x 2110 -y 720 -defaultsOSRD
+preplace port tx_clk_out_p -pg 1 -lvl 6 -x 2110 -y 120 -defaultsOSRD
+preplace port tx_clk_out_n -pg 1 -lvl 6 -x 2110 -y 140 -defaultsOSRD
+preplace port tx_frame_out_p -pg 1 -lvl 6 -x 2110 -y 160 -defaultsOSRD
+preplace port tx_frame_out_n -pg 1 -lvl 6 -x 2110 -y 180 -defaultsOSRD
+preplace port rx_clk_in_p -pg 1 -lvl 0 -x -40 -y 450 -defaultsOSRD
+preplace port rx_clk_in_n -pg 1 -lvl 0 -x -40 -y 430 -defaultsOSRD
+preplace port rx_frame_in_p -pg 1 -lvl 0 -x -40 -y 130 -defaultsOSRD
+preplace port rx_frame_in_n -pg 1 -lvl 0 -x -40 -y 510 -defaultsOSRD
+preplace portBus tx_data_out_p -pg 1 -lvl 6 -x 2110 -y 200 -defaultsOSRD
+preplace portBus tx_data_out_n -pg 1 -lvl 6 -x 2110 -y 220 -defaultsOSRD
+preplace portBus rx_data_in_p -pg 1 -lvl 0 -x -40 -y 490 -defaultsOSRD
+preplace portBus rx_data_in_n -pg 1 -lvl 0 -x -40 -y 470 -defaultsOSRD
+preplace portBus gpio -pg 1 -lvl 6 -x 2110 -y 580 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 240 -y 690 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 640 -y 320 -defaultsOSRD
+preplace inst rst_ps7_0_200M -pg 1 -lvl 1 -x 240 -y 350 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 3 -x 950 -y 190 -defaultsOSRD
+preplace inst ad9363_lvds_if_0 -pg 1 -lvl 5 -x 1880 -y 240 -defaultsOSRD
+preplace inst axi_lite_to_user_0 -pg 1 -lvl 3 -x 950 -y 340 -defaultsOSRD
+preplace inst ad9363_test_0 -pg 1 -lvl 4 -x 1440 -y 170 -defaultsOSRD
+preplace netloc processing_system7_0_SPI0_SCLK_O 1 1 5 NJ 660 NJ 660 NJ 660 NJ 660 NJ
+preplace netloc processing_system7_0_SPI0_MOSI_O 1 1 5 NJ 680 NJ 680 NJ 680 NJ 680 NJ
+preplace netloc SPI0_MISO_I_0_1 1 0 2 NJ 880 440
+preplace netloc processing_system7_0_SPI0_SS_O 1 1 5 NJ 720 NJ 720 NJ 720 NJ 720 NJ
+preplace netloc ad9363_lvds_if_0_tx_data_out_p 1 5 1 NJ 200
+preplace netloc ad9363_lvds_if_0_tx_clk_out_p 1 5 1 NJ 120
+preplace netloc ad9363_lvds_if_0_tx_clk_out_n 1 5 1 NJ 140
+preplace netloc ad9363_lvds_if_0_tx_frame_out_p 1 5 1 NJ 160
+preplace netloc ad9363_lvds_if_0_tx_frame_out_n 1 5 1 NJ 180
+preplace netloc ad9363_lvds_if_0_tx_data_out_n 1 5 1 NJ 220
+preplace netloc rx_data_in_p_0_1 1 0 5 10J 110 NJ 110 NJ 110 1110J 360 1700J
+preplace netloc rx_clk_in_p_0_1 1 0 5 0J 90 NJ 90 NJ 90 1150J 340 1620J
+preplace netloc rx_clk_in_n_0_1 1 0 5 -20J 80 NJ 80 NJ 80 1210J 380 1670J
+preplace netloc rx_frame_in_p_0_1 1 0 5 NJ 130 NJ 130 NJ 130 1120J 430 1710J
+preplace netloc rx_frame_in_n_0_1 1 0 5 20J 120 NJ 120 NJ 120 1140J 440 1730J
+preplace netloc rx_data_in_n_0_1 1 0 5 -10J 10 NJ 10 NJ 10 NJ 10 1630J
+preplace netloc ad9363_lvds_if_0_data_clk 1 3 3 1260 350 1680 10 2050
+preplace netloc ad9363_test_0_dac_valid 1 4 1 1600 130n
+preplace netloc ad9363_test_0_dac_data_i0 1 4 1 1690 150n
+preplace netloc ad9363_test_0_dac_data_q0 1 4 1 1650 170n
+preplace netloc ad9363_lvds_if_0_adc_valid 1 3 3 1270 480 NJ 480 2070
+preplace netloc ad9363_lvds_if_0_adc_data_i0 1 3 3 1250 500 NJ 500 2080
+preplace netloc ad9363_lvds_if_0_adc_data_q0 1 3 3 1240 520 NJ 520 2090
+preplace netloc ad9363_lvds_if_0_rx_status 1 3 3 1230 490 NJ 490 2040
+preplace netloc axi_lite_to_user_0_delay_value 1 3 2 1180 370 NJ
+preplace netloc axi_lite_to_user_0_load_en 1 3 2 1170 390 NJ
+preplace netloc axi_lite_to_user_0_rx_clk_ce 1 3 2 1100 410 NJ
+preplace netloc axi_lite_to_user_0_dds_en 1 3 1 1190 270n
+preplace netloc axi_lite_to_user_0_phase_inc 1 3 1 1160 250n
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 240 450
+preplace netloc rst_ps7_0_200M_peripheral_aresetn 1 1 2 460 200 790
+preplace netloc util_vector_logic_0_Res 1 3 2 1200 420 1660
+preplace netloc processing_system7_0_GPIO_O 1 1 5 NJ 580 NJ 580 NJ 580 NJ 580 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 4 480J 100 NJ 100 1220J 330 1590
+preplace netloc processing_system7_0_FCLK_CLK1 1 0 3 40 250 470 440 800J
+preplace netloc ad9363_test_0_dac_data_i1 1 4 1 1640 190n
+preplace netloc ad9363_test_0_dac_data_q1 1 4 1 1610 210n
+preplace netloc ad9363_lvds_if_0_adc_data_i1 1 3 3 1280 510 NJ 510 2060
+preplace netloc ad9363_lvds_if_0_adc_data_q1 1 3 3 1290 470 NJ 470 2030
+preplace netloc axi_lite_to_user_0_mode_1r1t 1 3 2 1130 400 1720J
+preplace netloc processing_system7_0_DDR 1 1 5 NJ 600 NJ 600 NJ 600 NJ 600 NJ
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N 320
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 490 260n
+preplace netloc processing_system7_0_FIXED_IO 1 1 5 NJ 620 NJ 620 NJ 620 NJ 620 NJ
+levelinfo -pg 1 -40 240 640 950 1440 1880 2110
+pagesize -pg 1 -db -bbox -sgen -200 0 2280 900
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_ps7_cnt":"1"
+}

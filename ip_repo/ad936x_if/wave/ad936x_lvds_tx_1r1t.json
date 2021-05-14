@@ -1,0 +1,24 @@
+{ signal: [
+    { name: "tx_clk",               wave: "P........",     period: 2 },
+    { name: 'dac_data_vld',         wave: '0.1.0.1.0.1.0.1.0.'       },
+    { name: 'dac_data_i0[11:0]',    wave: '2.4...4...4...4...',   data:["x", "I0", "I1", "I2", "I3"]},
+    { name: 'dac_data_q0[11:0]',    wave: '2.4...4...4...4...',   data:["x", "Q0", "Q1", "Q2", "Q3"]},
+    { name: 'tx_flag',              wave: '0...1.............'},
+    { name: 'cnt_data',             wave: '2.....2.2.2.2.2.2.',   data: [0,1,0,1,0,1]},
+    { name: 'dac_data_vld_r',       wave: '0...1.0.1.0.1.0.1.'       },
+    { name: 'dac_data_i0_r[11:0]',  wave: '2...4...4...4...4.',   data:["x", "I0", "I1", "I2", "I3"]},
+    { name: 'dac_data_q0_r[11:0]',  wave: '2...4...4...4...4.',   data:["x", "Q0", "Q1", "Q2", "Q3"]},
+    { name: 'tx_frame_shift',       wave: '2.....3.3.3.3.3.3.',   data:["2'b00", "2'b11", "2'b00","2'b11", "2'b00", "2'b11", "2'b00", "2'b11"]},
+    { name: 'tx_data_i[5:0]',      wave: '2.....4.4.4.4.4.4.',  data:["6'd0", "IH", "IL", "IH", "IL", "IH", "IL"]},
+    { name: 'tx_data_q[5:0]',      wave: '2.....5.5.5.5.5.5.',  data:["6'd0", "QH", "QL", "QH", "QL", "QH", "QL"]},
+    { name: 'tx_frame_out',         wave: '0.....1.0.1.0.1.0.'},
+    { name: 'tx_data_out',          wave: '2.....454545454545',  data:["x", "IH", "QH", "IL", "QL", "IH", "QH", "IL", "QL", "IH", "QH", "IL", "QL"]}
+    ],
+config: { hscale: 1 },
+head :{
+    text: "LVDS TX 1R1T Mode"
+},
+
+}
+
+

@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>design_1_ad9363_lvds_if_0_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>rst</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>rst</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.RST.POLARITY">ACTIVE_HIGH</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.RST.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>data_clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>data_clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.DATA_CLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.DATA_CLK.PHASE">0.000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.DATA_CLK.CLK_DOMAIN">design_1_ad9363_lvds_if_0_0_data_clk</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.DATA_CLK.ASSOCIATED_BUSIF"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.DATA_CLK.ASSOCIATED_RESET"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.DATA_CLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>fb_clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>fb_clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.FB_CLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.FB_CLK.PHASE">0.000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.FB_CLK.CLK_DOMAIN">design_1_ad9363_lvds_if_0_0_data_clk</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.FB_CLK.ASSOCIATED_BUSIF"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.FB_CLK.ASSOCIATED_RESET"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.FB_CLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>ref_clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>ref_clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.REF_CLK.FREQ_HZ">2e+08</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.REF_CLK.PHASE">0.000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.REF_CLK.CLK_DOMAIN">design_1_processing_system7_0_0_FCLK_CLK0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.REF_CLK.ASSOCIATED_BUSIF"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.REF_CLK.ASSOCIATED_RESET"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.REF_CLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:modelName>ad9363_lvds_if</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sat May 08 06:47:53 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:8fbf25c8</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_synthesisconstraints</spirit:name>
+        <spirit:displayName>Synthesis Constraints</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis.constraints</spirit:envIdentifier>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:8fbf25c8</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesiswrapper</spirit:name>
+        <spirit:displayName>Verilog Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>design_1_ad9363_lvds_if_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sat May 08 06:47:53 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:8fbf25c8</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:modelName>ad9363_lvds_if</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sat May 08 06:47:53 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:3d7988bc</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsimulationwrapper</spirit:name>
+        <spirit:displayName>Verilog Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>design_1_ad9363_lvds_if_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sat May 08 06:47:53 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:3d7988bc</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sat May 08 06:48:53 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:8fbf25c8</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>ref_clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rst</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rx_clk_in_p</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rx_clk_in_n</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rx_frame_in_p</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rx_frame_in_n</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rx_data_in_p</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">5</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rx_data_in_n</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">5</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>tx_clk_out_p</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>tx_clk_out_n</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>tx_frame_out_p</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>tx_frame_out_n</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>tx_data_out_p</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">5</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>tx_data_out_n</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">5</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>adc_valid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>adc_data_i0</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">11</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>adc_data_q0</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">11</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>adc_data_i1</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">11</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>adc_data_q1</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">11</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rx_status</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dac_valid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dac_data_i0</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">11</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dac_data_q0</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">11</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dac_data_i1</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">11</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dac_data_q1</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">11</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>mode_1r1t</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>data_clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>fb_clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>delay_value</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">4</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>delay_load_en</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>data_clk_ce</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/8290/src/ad9363_lvds_if_rx.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8290/src/ad9363_lvds_if_tx.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8290/src/ad9363_lvds_if.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/design_1_ad9363_lvds_if_0_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/8290/src/ad9363_lvds_if_rx.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8290/src/ad9363_lvds_if_tx.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/8290/src/ad9363_lvds_if.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/design_1_ad9363_lvds_if_0_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>design_1_ad9363_lvds_if_0_0.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_ad9363_lvds_if_0_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_ad9363_lvds_if_0_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_ad9363_lvds_if_0_0_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_ad9363_lvds_if_0_0_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>ad9363_lvds_if_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">design_1_ad9363_lvds_if_0_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>ad9363_lvds_if_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>15</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="nopcore"/>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4515d2e3_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37a4a042_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26f5ece5_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5acae5a8_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@423762b0_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cc3138e_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46abfbae_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@858762c_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c0b63d4_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4521e538_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@170b3b18_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ff3828_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b66c2f9_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cf5a7ed_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6171355b_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e795855_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7df6eba9_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e9dc74d_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b50efd2_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@583179cf_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@452c87e3_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f4912bb_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4eaedaab_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d04792b_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@793361f6_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53f0dfeb_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25480f2d_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@345a712f_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f364a03_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1211df61_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41c8bad4_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19a11db6_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bcac7f8_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7733719d_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64efacdc_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72308e8c_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ee6aca3_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4584ffdd_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47b5df04_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65c6298_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62f7d02e_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7963778b_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@995f944_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15dfdea6_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e670bad_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@541368f3_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@493d7245_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b51476c_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35640142_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6dd30a28_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fa99d2a_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75776348_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f25386e_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f5a0381_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f1b1ed5_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2996d14f_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@456af782_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24a7117d_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@af35271_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d9003ed_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e3d7515_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f9dd6a4_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e67433d_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26ae00d0_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bbe56a8_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12b7a32e_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36e7723b_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3525e1e0_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@243ce980_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41518e14_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16227e1_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68215744_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@441c50c0_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67029ec0_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bb83d5b_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49e17417_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47640706_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a951904_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46692e97_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43861c53_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f1a99a7_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6da7bb55_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73e88324_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a2981d1_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ec53bc9_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@767d75e_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d073644_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ce9d7ba_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b67e0d_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51cc00a4_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f92eb1d_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6978708a_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ba8e166_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f5b3e2f_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b4d5ef3_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f632a2e_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5004ff0b_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@eb8ba10_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f2f8da_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cc9fd26_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1111b96c_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5575d429_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d8ec882_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54961a7a_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@608a18e6_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b96244_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c341391_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68078531_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32262731_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a2b0389_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e8dd37d_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24727bae_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@243e5834_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2497ce45_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78b57d23_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@688f6c6_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@85701ef_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@619a90ea_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1af662e9_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@380b3334_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56b4f0b3_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e886386_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b208fc8_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bb45a09_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d790b20_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55b1ea47_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a4da9e3_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a6bcd4c_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64490338_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65456d9c_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d0abce6_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e70857e_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23d808c_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@215acf1_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5da8f9e9_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6aba793c_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@426ba3c0_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65f75171_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@645fa3b0_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27d05136_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4369a718_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4165c8c4_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@122c6d9_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d559bff_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c3c55ed_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38e3094c_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56fb1639_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74d38953_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67b28234_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12ff29e3_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70d30088_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71d7a8e1_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fee8e49_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15e9093b_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@744b38f6_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2562065a_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cd8e5db_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@563edce4_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a3e65de_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1745d5b1_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74a3e0b3_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c89f7c7_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@100a2ae3_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fe104ba_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@490aa71e_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31c03f28_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44062047_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5475eff2_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70cdc9f1_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47d5f8ff_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c28fae8_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79dd9cee_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2482cf2a_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16f309cc_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28297251_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65619fab_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dff99a3_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4855f5b2_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39bdc6d2_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69cd2822_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@451e245b_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@787ea558_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76ea1ca4_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79563437_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70b3121f_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3991577d_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6eb7f2d_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@300b975e_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b3829a_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a8b7b25_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f7d8a54_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fa45c22_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@355d0cfc_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46c3f46f_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54b6c507_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48d8777d_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fda5633_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76064d61_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e3f5e9c_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c4abfb5_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16974663_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f309018_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ffb775_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28a0d91c_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1afdd75_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c593268_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bdd7a7b_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63f0e9a9_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2febac9d_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33735867_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b1d9ed4_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24ce68a3_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18b3f7e8_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b7b9027_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32075b54_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79de53cd_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51891afc_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d4639bd_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d4db3cd_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10fcfa34_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45b0fb89_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b261523_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58d291cd_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26ec5a8f_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f2afd1e_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@387930d9_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ccf1ea3_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34e53c53_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@787866b5_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3309ac8a_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a131827_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fc6f446_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71eb05f2_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6776e29a_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66cb162f_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cecb5b4_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f0782ac_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ec72528_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@518b7d8c_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51201cf4_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fc88d0b_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@392ad36_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26556214_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1608a61c_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e62b23_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4533e86_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7290b226_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35eb45f2_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21053e4b_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@703f1cf1_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52a98ee_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45c5728_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f3d0658_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76372edf_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b87d69_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74bd8d83_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ba1bc7_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c0a4154_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ca0d19e_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a44867b_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26ea89a0_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3658cfc9_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a3d63a0_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12c3420_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4eef196c_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4073577b_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c582201_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14585159_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@599ec9d4_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36baf0c1_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74ca0ebe_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ee9c849_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c0b09ec_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27ee31b7_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25f35727_ARCHIVE_LOCATION">e:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ip_repo/ad936x_if</xilinx:tag>
+      </xilinx:tags>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.DATA_CLK.ASSOCIATED_BUSIF" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.DATA_CLK.ASSOCIATED_RESET" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.DATA_CLK.CLK_DOMAIN" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.DATA_CLK.FREQ_HZ" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.DATA_CLK.PHASE" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.FB_CLK.ASSOCIATED_BUSIF" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.FB_CLK.ASSOCIATED_RESET" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.FB_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.FB_CLK.FREQ_HZ" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.FB_CLK.PHASE" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.REF_CLK.ASSOCIATED_BUSIF" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.REF_CLK.ASSOCIATED_RESET" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.REF_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.REF_CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.REF_CLK.PHASE" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RST.POLARITY" xilinx:valuePermission="bd_and_user"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="2329f2fa"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="abdace29"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="87c902f2"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="96e88bc2"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

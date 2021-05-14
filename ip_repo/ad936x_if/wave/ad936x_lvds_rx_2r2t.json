@@ -1,0 +1,22 @@
+{ signal: [
+    { name: "rx_clk",               wave: "pP.............",     period: 2  },
+    { name: 'rx_frame_delay',       wave: '0.1...0...1...0...1...0...1.',  phase:-1.5},
+    { name: 'rx_data_delay',        wave: 'xx44445555444455554444555544',  phase:-1.5, data:['I0H', 'Q0H', 'I0L', 'Q0L', 'I1H', 'Q1H', 'I1L', 'Q1L','I0H', 'Q0H', 'I0L', 'Q0L', 'I1H', 'Q1H', 'I1L', 'Q1L','I0H', 'Q0H', 'I0L', 'Q0L', 'I1H', 'Q1H', 'I1L', 'Q1L', ]},
+    { name: "rx_frame",             wave: "2.....3.3.3.3.3.3.3.3.3.3.3.3.",phase:-0.1, data:["0", "2'b11", "2b'11", "2'b00","2'b00", "2'b11", "2'b11", "2'b00", "2'b00", "2'b11", "2'b00", "2'b11"]},
+    { name: 'rx_data_i',            wave: '2.....4.4.4.4.4.4.4.4.4.4.4.4.',   phase:-0.1, data:['0', "I0H", "I0L", "I1H", "I1L", "I0H", "I0L", "I1H", "I1L", "I0H", "I1L", "I0H",]},
+    { name: 'rx_data_q',            wave: '2.....4.4.4.4.4.4.4.4.4.4.4.4.',   phase:-0.1, data:['0', "Q0H", "Q0L", "Q1H", "Q1L", "Q0H", "Q0L", "Q1H", "Q1L", "Q0H", "Q1L", "Q0H",]},
+    { name: 'rx_frame_shift',       wave: '2.......2.2.2.2.2.2.2.2.2.2.2.',  data:["4'b0000","4'b0011", "4'b1111", "4'b1100", "4'b0000", "4'b0011", "4'b1111", "4'b1100", "4'b0000", "4'b1100", "4'b0000"]},
+    { name: 'rx_data_shift_i',      wave: '2.......4.4.4.4.4.4.4.4.4.4.4.',  data:[0,"{xx,I0H}", "{I0H,I0L}", "{I0L,I1H}", "{I1H,I1L}", "{I1HL,I0H}", "{I0H,I0L}", "{I0L,I1H}", "{I1H,I1L}", "{I0L,I1H}", "{I1H,I1L}"]},
+    { name: 'rx_data_shift_q',      wave: '2.......4.4.4.4.4.4.4.4.4.4.4.',  data:[0,"{xx,Q0H}", "{Q0H,Q0L}", "{Q0L,Q1H}", "{Q1H,Q1L}", "{Q1HL,Q0H}", "{Q0H,Q0L}", "{Q0L,Q1H}", "{Q1H,Q1L}", "{Q0L,Q1H}", "{Q1H,Q1L}"]},
+    { name: 'adc_data_vld',         wave: '0...............1.0.....1.0...'},
+    { name: 'adc_data_i0[11:0]',    wave: '2...........4.......4.......4.',data:[0,"I0","I0","I0"]},
+    { name: 'adc_data_q0[11:0]',    wave: '2...........4.......4.......4.',data:[0,"Q0","Q0","Q0"]},
+    { name: 'adc_data_i1[11:0]',    wave: '2...............4.......4.....',data:[0,"I1","I1","I1"]},
+    { name: 'adc_data_q1[11:0]',    wave: '2...............4.......4.....',data:[0,"Q1","Q1","Q1"]}
+    ],
+head :{
+    text: "LVDS RX 2R2T Mode"
+},
+config: { hscale: 1 }
+}
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# 
+# Start of session at: Fri May  7 17:04:20 2021
+# Process ID: 8248
+# Current directory: E:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ad936x_lvds_if/vitis/webtalk
+# Command line: wbtcv.exe -mode batch -source vitis_webtalk.tcl
+# Log file: E:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ad936x_lvds_if/vitis/webtalk/webtalk.log
+# Journal file: E:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ad936x_lvds_if/vitis/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source vitis_webtalk.tcl

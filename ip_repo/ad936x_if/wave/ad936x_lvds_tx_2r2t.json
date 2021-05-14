@@ -1,0 +1,28 @@
+{ signal: [
+    { name: "tx_clk",               wave: "P...........",     period: 2 },
+    { name: 'dac_data_vld',         wave: '0.1.0.....1.0.....1.0...'       },
+    { name: 'dac_data_i0[11:0]',    wave: '2.4.2.....4.2.....4.2...',   data:["x", "I0", "xxx", "I0", "xxx", "I0"]},
+    { name: 'dac_data_q0[11:0]',    wave: '2.4.2.....4.2.....4.2...',   data:["x", "Q0", "xxx", "Q0", "xxx", "Q0"]},
+    { name: 'dac_data_i1[11:0]',    wave: '2.4.2.....4.2.....4.2...',   data:["x", "I1", "xxx", "I1", "xxx", "I1"]},
+    { name: 'dac_data_q1[11:0]',    wave: '2.4.2.....4.2.....4.2...',   data:["x", "Q1", "xxx", "Q1", "xxx", "Q1"]},
+    { name: 'tx_flag',              wave: '0...1...................'},
+    { name: 'cnt_tx_data',          wave: '2.....2.2.2.2.2.2.2.2.2.',    data:[0,1,2,3,0,1,2,3,0,1]} ,
+    { name: 'dac_data_vld_r',       wave: '0...1.0.....1.0.....1.0.'       },
+    { name: 'dac_data_i0_r[11:0]',  wave: '2...4.......4.......4...',   data:["x", "I0", "I0", "I0"]},
+    { name: 'dac_data_q0_r[11:0]',  wave: '2...4.......4.......4...',   data:["x", "Q0", "Q0", "Q0"]},
+    { name: 'dac_data_i1_r[11:0]',  wave: '2...4.......4.......4...',   data:["x", "I1", "I1", "I1"]},
+    { name: 'dac_data_q1_r[11:0]',  wave: '2...4.......4.......4...',   data:["x", "Q1", "Q1", "Q1"]},
+    { name: 'tx_frame_shift',       wave: '2.....3.3.3.3.3.3.3.3.3.',   data:["2'b00", "2'b11", "2'b11","2'b00", "2'b000", "2'b11", "2'b11", "2'b00","2'b00"]},
+    { name: 'tx_data_i[5:0]',       wave: '2.....4.4.5.5.4.4.5.5.4.',  data:["6'd0", "I0H", "I0L", "I1H", "I1L", "I0H", "I0L", "I1L","I1L",]},
+    { name: 'tx_data_q[5:0]',       wave: '2.....4.4.5.5.4.4.5.5.4.',  data:["6'd0", "Q0H", "Q0L", "Q1H", "Q1L", "Q0H", "Q0L", "Q1L","Q1L",]},
+    { name: 'tx_frame_out',         wave: '0.....1...0...1...0...1.'},
+    { name: 'tx_data_out',          wave: '2.....444455554444555544',  data:["x", "I0H", "Q0H", "I0L", "Q0L", "I1H", "Q1H", "I1L", "Q1L", "I0H", "Q0H", "I0L", "Q0L"]}
+    ],
+config: { hscale: 1 },
+
+head :{
+    text: "LVDS TX 2R2T Mode"
+},
+}
+
+

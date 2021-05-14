@@ -1,0 +1,7 @@
+/*ad936x_lvds_if_top*/
+the_ROM_image:
+{
+  [bootloader]<ad936x_lvds_if_top/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}

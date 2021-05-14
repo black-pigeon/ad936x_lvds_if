@@ -1,0 +1,25 @@
+17:23:17 **** Incremental Build of configuration Debug for project ad936x_lvds_if_loop ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ad936x_lvds_if/vitis/ad936x_lvds_if_top/export/ad936x_lvds_if_top/sw/ad936x_lvds_if_top/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: ad936x_lvds_if_loop.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LE:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ad936x_lvds_if/vitis/ad936x_lvds_if_top/export/ad936x_lvds_if_top/sw/ad936x_lvds_if_top/standalone_domain/bsplib/lib -o "ad936x_lvds_if_loop.elf"  ./src/ad9361.o ./src/ad9361_api.o ./src/ad9361_conv.o ./src/axi_lite_to_user.o ./src/main.o ./src/platform.o ./src/util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ad936x_lvds_if_loop.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ad936x_lvds_if_loop.elf  |tee "ad936x_lvds_if_loop.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 216228	   4040	  23424	 243692	  3b7ec	ad936x_lvds_if_loop.elf
+'Finished building: ad936x_lvds_if_loop.elf.size'
+' '
+
+17:23:18 Build Finished (took 757ms)
+

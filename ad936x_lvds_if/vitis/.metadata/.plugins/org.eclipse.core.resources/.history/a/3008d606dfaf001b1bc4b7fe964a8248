@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="ad936x_lvds_if_loop" location="E:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ad936x_lvds_if/vitis/ad936x_lvds_if_loop" platform="E:/Wcc/DSP/FPGA_SDR/AntSDR_B220/ad936x_lvds_if/vitis/ad936x_lvds_if_top/export/ad936x_lvds_if_top/ad936x_lvds_if_top.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="ad936x_lvds_if_loop_system" sysConfig="ad936x_lvds_if_top" runtime="cpp" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" dimmRepoPath="" mssSignature="1dc5398aab746ca0cbe88a0f1e4c0757">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.427293376" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.432024609" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
