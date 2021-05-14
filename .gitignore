@@ -3,7 +3,5 @@
 /ad936x_lvds_if/ad936x_lvds_loop.ip_user_files
 /ad936x_lvds_if/ad936x_lvds_loop.sim
 /ad936x_lvds_if/ad936x_lvds_loop.tmp
-!/ad936x_lvds_if/ad936x_lvds_loop.runs/impl_1src/ad936x_lvds_if_top.bit   
-!/ad936x_lvds_if/ad936x_lvds_loop.runs/impl_1src/ad936x_lvds_if_top.ltx   
 /ad936x_lvds_if/ad936x_lvds_loop.runs
 !/.gitignore
